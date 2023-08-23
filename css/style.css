@@ -1,24 +1,39 @@
+/************************************************
+    GENERAL
+ ************************************************/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/************************************************
+    UTILITY
+ ************************************************/
 .debug *{
   border: 1px solid black;
 }
 
+/************************************************
+    SECTION TOP
+ ************************************************/
 .top{
   height: calc(100vh - 80px);
   display: flex;
 }
 
+/* menu */
+/* --------------------------------------------- */
 .top-sx{
-  width: 225px;
+  width: 230px;
 }
+/* --------------------------------------------- */
 
+/* main */
+/* --------------------------------------------- */
 .top-dx{
-  width: calc(100% - 225px);
+  width: calc(100% - 230px);
+  overflow-y: auto;
 }
 
 .top-dx .opaque-fixed{
@@ -26,19 +41,22 @@
   
   position: fixed;
   z-index: 999;
-  left: 225px;
+  left: 230px;
   right: 0;
 
   text-align: right;
-  background-color: antiquewhite;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .top-dx .main{
   margin-top: 80px;
   height: calc(100% - 80px);
-  overflow-y: scroll;
 }
+/* --------------------------------------------- */
 
+/************************************************
+    SECTION BOTTOM
+ ************************************************/
 .bottom{
   height: 80px;
   background-color: blueviolet;
