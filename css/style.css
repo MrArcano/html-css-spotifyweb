@@ -68,6 +68,14 @@
   margin-top: 80px;
   height: calc(100% - 80px);
 }
+
+.top-dx .main .category .row{
+  display: flex;
+}
+
+.top-dx .main .category .row .col{
+  width: calc(100% / 6);
+}
 /* --------------------------------------------- */
 
 /************************************************
