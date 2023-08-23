@@ -171,7 +171,7 @@ ul{
   border: 1px solid white;
   padding: 8px 24px;
   border-radius: 24px;
-  margin-right: 8px;
+  margin-right: 32px;
 }
 
 .opaque-fixed .btn:hover{
@@ -186,6 +186,7 @@ ul{
 .category-menu ul{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .category-menu li{
@@ -245,7 +246,7 @@ ul{
     width: 40px; /* riduco la grandezza per il mobile */
   }
 
-  .link-active{
+  .link-active-left{
     box-shadow: inset 0px 0px #adff2f;
     /* rendo invisibile la classe active */
   }
