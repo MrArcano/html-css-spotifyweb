@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html{
+  font-family: 'Montserrat', sans-serif;
+}
+
 /************************************************
     UTILITY
  ************************************************/
@@ -84,14 +88,13 @@
 .bottom{
   height: 80px;
   display: flex;
-  background-color: blueviolet;
 }
 
 .bottom-left,
 .bottom-right{
-  width: 15%;
+  width: 20%;
 }
 
 .bottom-middle{
-  width: 70%;
+  width: 60%;
 }
