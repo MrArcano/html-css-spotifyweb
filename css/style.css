@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.debug *{
+  border: 1px solid black;
+}
+
+.top{
+  height: calc(100vh - 80px);
+  background-color: red;
+
+  display: flex;
+}
+
+.top-sx{
+  width: 225px;
+  background-color: aqua;
+}
+
+.top-dx{
+  width: calc(100% - 225px);
+}
+
+.top-dx .opaque-fixed{
+  height: 80px;
+  
+  position: fixed;
+  z-index: 999;
+  left: 225px;
+  right: 0;
+
+  text-align: right;
+  background-color: antiquewhite;
+}
+
+.top-dx .main{
+  margin-top: 80px;
+  height: calc(100% - 80px);
+}
+
+.bottom{
+  height: 80px;
+  background-color: blueviolet;
+}
