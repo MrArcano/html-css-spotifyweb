@@ -202,7 +202,7 @@ ul{
   font-size: 14px;
 }
 
-/* Category song/card*/
+/* Category song/**/
 .category{
   padding-top: 32px;
 }
@@ -231,6 +231,34 @@ ul{
   aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.hover-play{
+  position: relative;
+}
+
+.fa-circle-play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 64px;
+}
+
+.shadow-hover{
+  display: none;
+
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.category .hover-play:hover .shadow-hover{
+  display: block;
 }
 
 /************************************************
