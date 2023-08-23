@@ -1,6 +1,20 @@
 /************************************************
     GENERAL
  ************************************************/
+
+/* 
+COLOR:
+top-sx: #000000
+top-dx: #141922
+
+bottom: #282828
+
+link text: #a3a3a3
+
+hover: white
+active: #adff2f
+*/
+
 *{
   margin: 0;
   padding: 0;
@@ -9,13 +23,18 @@
 
 html{
   font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+img{
+  max-width: 100%;
 }
 
 /************************************************
     UTILITY
  ************************************************/
 .debug *{
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 /************************************************
@@ -34,6 +53,8 @@ html{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  background-color: #000000;
 }
 .top-sx .top-menu{
   height: 100%;
@@ -45,7 +66,7 @@ html{
 
 .top-sx .playlist{
   height: 60%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 /* --------------------------------------------- */
 
@@ -54,6 +75,8 @@ html{
 .top-dx{
   width: calc(100% - 230px);
   overflow-y: auto;
+
+  background-color: #141922;
 }
 
 .top-dx .opaque-fixed{
@@ -88,6 +111,7 @@ html{
 .bottom{
   height: 80px;
   display: flex;
+  background-color: #282828;
 }
 
 .bottom-left,
