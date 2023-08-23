@@ -80,25 +80,24 @@ ul{
 
 /* PLAYLIST */
 
-.playlist h4{
-  padding-left: 24px;
+.create-playlist h4{
   padding-top: 24px;
   padding-bottom: 12px;
 }
 
-.playlist .create-playlist{
+.create-playlist{
   padding-left: 24px;
 }
 
-.playlist .create-playlist a{
+.create-playlist a{
   display: flex;
   align-items: center;
 }
-.playlist .create-playlist i{
+.create-playlist i{
   font-size: 40px;
   padding-right: 8px;
 }
-.playlist .create-playlist span{
+.create-playlist span{
   font-size: 16px;
 }
 
@@ -113,6 +112,48 @@ ul{
 .playlist ul a{
   padding-left: 24px;
 }
+
+/* USER */
+.user{
+  display: flex;
+  flex-direction: column;
+}
+
+.user a{
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.user a>img{
+  width: 16px;
+}
+
+.user .image{
+  background-color: grey;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user .line{
+  background-color: #a3a3a3;
+  width: 80%;
+  height: 1px;
+  margin: 8px 0;
+  margin-left: 24px;
+}
+
+.user span{
+  padding-left: 8px;
+}
+
+.user h3{
+  padding-left: 8px;
+  color: white;
+}
+
 /************************************************
     TOP DX
 ************************************************/
@@ -156,7 +197,16 @@ ul{
     display: none; /* nascondo la playlist */
   }
 
-  /* bottom menu change da fare */
+  /* user */
+
+  .user span{
+    display: none;
+  }
+  
+  .user h3{
+    display: none;
+  }
+
 
   /* allargo la parte destra top, perchè la sinistra si rimpicciolisce */
   .top-dx{
