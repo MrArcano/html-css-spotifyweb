@@ -1,3 +1,169 @@
-.top-sx .logo{
-  width: 60%;
+/************************************************
+    GENERAL
+ ************************************************/
+
+a{
+  text-decoration: none;
+  color: #a3a3a3;
 }
+
+a:hover{
+  color: white;
+}
+
+ul{
+  list-style: none;
+}
+
+/************************************************
+    UTILITY
+************************************************/
+
+.link-active{
+  box-shadow: inset 4px 0px #adff2f;
+}
+
+/************************************************
+    TOP SX
+************************************************/
+
+.top-sx a{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* LOGO BIG */
+.logo{
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 60%;
+  margin-left: 16px;
+}
+
+/* LOGO SMALL */
+
+.logo-small{
+  padding-top: 4px;
+}
+
+.logo-small img{
+  width: 25px;
+}
+
+/* MENU */
+.menu ul a{
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.menu li:first-child{
+  display: none;
+}
+
+.menu li{
+  padding: 4px 0;
+}
+
+.menu li:active{
+  box-shadow: inset 4px 0px #adff2f;
+}
+
+.menu img{
+  width: 25px;
+  margin-right: 4px;
+}
+
+/* PLAYLIST */
+
+.playlist h4{
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
+.playlist .create-playlist{
+  padding-left: 24px;
+}
+
+.playlist .create-playlist a{
+  display: flex;
+  align-items: center;
+}
+.playlist .create-playlist i{
+  font-size: 40px;
+  padding-right: 8px;
+}
+.playlist .create-playlist span{
+  font-size: 16px;
+}
+
+.playlist li{
+  padding: 8px 0;
+}
+
+.playlist li:active{
+  box-shadow: inset 4px 0px #adff2f;
+}
+
+.playlist ul a{
+  padding-left: 24px;
+}
+/************************************************
+    TOP DX
+************************************************/
+
+
+/************************************************
+    RESPONSIVE
+************************************************/
+
+/* MOBILE */
+ @media screen and (max-width: 600px) {
+  /************************************************
+     TOP SX
+  ************************************************/
+  .top-sx{
+    width: 40px; /* riduco la grandezza per il mobile */
+  }
+
+  .link-active{
+    box-shadow: inset 0px 0px #adff2f;
+    /* rendo invisibile la classe active */
+  }
+
+  .top-sx .menu ul a{
+    padding-left: 0px;/* azzero il padding dato prima */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-sx .menu li:first-child{
+    display: block; /* rendo visibile il logo small */
+  }
+
+  .top-sx .logo{
+    display: none; /* nascondo il logo big */
+  }
+
+  .top-sx .playlist{
+    display: none; /* nascondo la playlist */
+  }
+
+  /* bottom menu change da fare */
+
+  /* allargo la parte destra top, perchè la sinistra si rimpicciolisce */
+  .top-dx{
+    width: calc(100% - 40px);
+  }
+
+  .top-sx .menu a span{
+    display: none;
+  }
+ }

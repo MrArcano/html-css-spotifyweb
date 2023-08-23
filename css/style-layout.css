@@ -34,7 +34,7 @@ img{
     UTILITY
  ************************************************/
 .debug *{
-  border: 1px solid white;
+  border: 1px solid yellow;
 }
 
 /************************************************
@@ -50,23 +50,26 @@ img{
 .top-sx{
   height: 100%;
   width: 230px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
   background-color: #000000;
 }
 .top-sx .top-menu{
-  height: 100%;
+  height: calc(100% - 80px);
+  border-color: red;
 }
 
-.top-sx .logo{
-  height: 80px;
+.top-sx .top-menu .playlist{
+  height: calc(100% - 170px);
 }
-
-.top-sx .playlist{
-  height: 60%;
+.top-sx .top-menu .playlist nav{
+  border-color: white;
+  height: calc(100% - 170px);
   overflow-y: auto;
+}
+
+
+.top-sx .bottom-menu{
+  height: 80px;
 }
 /* --------------------------------------------- */
 
@@ -75,7 +78,7 @@ img{
 .top-dx{
   width: calc(100% - 230px);
   overflow-y: auto;
-
+  
   background-color: #141922;
 }
 
@@ -93,6 +96,7 @@ img{
 
 .top-dx .main{
   margin-top: 80px;
+  padding: 16px;
   height: calc(100% - 80px);
 }
 
