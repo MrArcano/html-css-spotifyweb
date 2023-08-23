@@ -26,6 +26,18 @@
 /* --------------------------------------------- */
 .top-sx{
   width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-sx .logo{
+  height: 80px;
+}
+
+.top-sx .playlist{
+  max-height: calc(100vh - 300px);
+  overflow-y: scroll;
 }
 /* --------------------------------------------- */
 
