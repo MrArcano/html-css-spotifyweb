@@ -10,14 +10,11 @@
 
 .top{
   height: calc(100vh - 80px);
-  background-color: red;
-
   display: flex;
 }
 
 .top-sx{
   width: 225px;
-  background-color: aqua;
 }
 
 .top-dx{
@@ -39,6 +36,7 @@
 .top-dx .main{
   margin-top: 80px;
   height: calc(100% - 80px);
+  overflow-y: scroll;
 }
 
 .bottom{
