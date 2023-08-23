@@ -56,22 +56,19 @@ img{
 .top-menu{
   height: calc(100% - 80px); /* sottraggo 80px dati dal bottom-menu */
   border: 4px solid red;
+  overflow: hidden;
 }
 
 .menu{
-  height: 15%;
-  overflow: hidden;
-
   border: 4px solid blue;
 }
 
 .playlist{
-  max-height: calc(100% - 180px);
-
+  height: calc(100% - 200px);
   border: 4px solid pink;
 }
 .playlist nav{
-  height: 50%;
+  height: calc(100% - 100px);
   overflow-y: auto;
 
   border: 4px solid rgb(255, 123, 0);
