@@ -206,6 +206,32 @@ ul{
   padding-top: 32px;
 }
 
+.category .row{
+  margin: 0 -8px;
+  padding-top: 16px;
+}
+
+.category .card{
+  text-align: center;
+  padding: 8px;
+}
+
+.category h5{
+  padding-top: 8px;
+}
+
+.category h6{
+  color: #a3a3a3;
+  padding-top: 8px;
+}
+
+.category .image{
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 /************************************************
     RESPONSIVE
 ************************************************/
