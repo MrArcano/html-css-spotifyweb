@@ -19,8 +19,12 @@ ul{
     UTILITY
 ************************************************/
 
-.link-active{
+.link-active-left{
   box-shadow: inset 4px 0px #adff2f;
+}
+
+.link-active-bottom{
+  box-shadow: inset 0px -4px #adff2f;
 }
 
 /************************************************
@@ -157,8 +161,28 @@ ul{
 /************************************************
     TOP DX
 ************************************************/
+/* opaque-fixed button */
+.opaque-fixed .btn{
+  color: white;
+  border: 1px solid white;
+  padding: 8px 24px;
+  border-radius: 24px;
+  margin-right: 8px;
+}
 
+.opaque-fixed .btn:hover{
+  scale: 1.05;
+}
 
+/* Category menu */
+.category-menu ul{
+  display: flex;
+}
+
+.category-menu li{
+  padding: 16px;
+  font-weight: bold;
+}
 /************************************************
     RESPONSIVE
 ************************************************/
@@ -177,7 +201,7 @@ ul{
     /* rendo invisibile la classe active */
   }
 
-  .top-sx .menu ul a{
+  .menu ul a{
     padding-left: 0px;/* azzero il padding dato prima */
 
     display: flex;
@@ -185,15 +209,19 @@ ul{
     justify-content: center;
   }
 
-  .top-sx .menu li:first-child{
+  .menu li:first-child{
     display: block; /* rendo visibile il logo small */
   }
 
-  .top-sx .logo{
+  .logo{
     display: none; /* nascondo il logo big */
   }
 
-  .top-sx .playlist{
+  .create-playlist{
+    display: none; /* nascondo la create-playlist */
+  }
+
+  .playlist{
     display: none; /* nascondo la playlist */
   }
 
@@ -207,7 +235,16 @@ ul{
     display: none;
   }
 
+  .user .line{
+    opacity: 0; /* invece di usare display none, lo rendo invisibile, per tenermi la spaziatura tra gli elementi */
+  }
 
+  .user a{
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+  }
+  
   /* allargo la parte destra top, perchè la sinistra si rimpicciolisce */
   .top-dx{
     width: calc(100% - 40px);
