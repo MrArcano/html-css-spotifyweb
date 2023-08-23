@@ -25,10 +25,14 @@
 /* menu */
 /* --------------------------------------------- */
 .top-sx{
+  height: 100%;
   width: 230px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.top-sx .top-menu{
+  height: 100%;
 }
 
 .top-sx .logo{
@@ -36,7 +40,7 @@
 }
 
 .top-sx .playlist{
-  max-height: calc(100vh - 300px);
+  height: 60%;
   overflow-y: scroll;
 }
 /* --------------------------------------------- */
@@ -71,5 +75,15 @@
  ************************************************/
 .bottom{
   height: 80px;
+  display: flex;
   background-color: blueviolet;
+}
+
+.bottom-left,
+.bottom-right{
+  width: 15%;
+}
+
+.bottom-middle{
+  width: 70%;
 }
