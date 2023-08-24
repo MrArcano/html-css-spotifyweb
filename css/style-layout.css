@@ -142,32 +142,3 @@ img{
 .bottom-middle{
   width: 60%;
 }
-
-/************************************************
-    RESPONSIVE
- ************************************************/
-
-@media screen and (max-width: 1100px){
-  .category .row .col{
-    width: calc(100% / 4);
-  }
-}
-
-@media screen and (max-width: 700px){
-  .category .row .col{
-    width: calc(100% / 2);
-  }
-}
-
-@media screen and (max-width: 600px){
-
-  .top-sx{
-
-    min-height: 250px;
-    background-color: #000000;
-  }
-
-  .opaque-fixed{
-    left: 40px;
-  }
-}
