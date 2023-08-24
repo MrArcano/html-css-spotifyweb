@@ -23,6 +23,10 @@ ul{
   box-shadow: inset 4px 0px #adff2f;
 }
 
+.link-active-left a img{
+  filter: none;
+}
+
 .link-active-bottom{
   width: 32px;
   height: 2px;
@@ -42,7 +46,6 @@ ul{
 
 /* LOGO BIG */
 .logo{
-  height: 80px;
   display: flex;
   align-items: center;
 }
@@ -69,6 +72,10 @@ ul{
   padding-left: 24px;
 }
 
+.menu ul a:hover img{
+  filter: none;
+}
+
 .menu li:first-child{
   display: none;
 }
@@ -84,6 +91,7 @@ ul{
 .menu img{
   width: 25px;
   margin-right: 4px;
+  filter: invert(65%) sepia(0%) saturate(1%) hue-rotate(337deg) brightness(99%) contrast(95%);
 }
 
 /* PLAYLIST */
@@ -101,9 +109,24 @@ ul{
   display: flex;
   align-items: center;
 }
-.create-playlist i{
+
+.create-playlist a:hover .add-playlist{
+  background-color: white;
+}
+
+.create-playlist .add-playlist{
+  /* creo il button per add-playlist */
   font-size: 40px;
-  padding-right: 8px;
+  width: 40px;
+  height: 40px;
+
+  line-height: 40px;
+  text-align: center;
+
+  color: black;
+  background-color: #a3a3a3;
+
+  margin-right: 8px;
 }
 .create-playlist span{
   font-size: 16px;
@@ -273,8 +296,12 @@ ul{
     width: 40px; /* riduco la grandezza per il mobile */
   }
 
-  .link-active-left{
+  .menu li:active{
     box-shadow: inset 0px 0px #adff2f;
+  }
+
+  .link-active-left{
+    box-shadow: inset 0px 0px #acff2f;
     /* rendo invisibile la classe active */
   }
 
@@ -284,6 +311,10 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  
+  .menu img{
+    filter: none
   }
 
   .menu li:first-child{
