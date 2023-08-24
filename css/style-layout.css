@@ -2,19 +2,6 @@
     GENERAL
  ************************************************/
 
-/* 
-COLOR:
-top-sx: #000000
-top-dx: #141922
-
-bottom: #282828
-
-link text: #a3a3a3
-
-hover: white
-active: #adff2f
-*/
-
 *{
   margin: 0;
   padding: 0;
@@ -130,15 +117,12 @@ img{
 .bottom{
   height: 80px;
   display: flex;
-  background-color: #282828;
+  justify-content: space-between;
   text-align: center;
-}
 
-.bottom-left,
-.bottom-right{
-  width: 20%;
+  background-color: #282828;
 }
 
 .bottom-middle{
-  width: 60%;
+  width: 50%;
 }

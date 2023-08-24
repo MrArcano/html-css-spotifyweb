@@ -237,7 +237,7 @@ ul{
   font-size: 14px;
 }
 
-/* Category song/**/
+/* Category song*/
 .category{
   padding-top: 32px;
 }
@@ -294,4 +294,8 @@ ul{
 .category .hover-play:hover .shadow-hover{
   display: flex;
 }
+
+/************************************************
+    BOTTOM player
+************************************************/
 
