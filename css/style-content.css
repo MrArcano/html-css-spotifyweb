@@ -350,5 +350,81 @@ ul{
   margin-right: 8px;
 }
 /* Bottom center - player button */
+.bottom-middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* BOX BUTTON */
+.box-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+}
+
+.box-button .fa-circle-play{
+  font-size: 32px;
+  padding: 0 16px;
+}
+
+.box-button a{
+  color: white;
+}
+
+.box-button a:hover{
+  scale: 1.05;
+}
+
+/* PROGRESS BAR */
+.progress-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.progress-bar .bar{
+  width: 80%;
+  height: 4px;
+  background-color: #5a5a5a;
+  border-radius: 4px;
+  margin: 0 24px;
+
+  position: relative;
+  cursor: pointer;
+}
+
+.progress-bar .used-bar{
+  width: 20%;
+  height: 4px;
+  background-color: #c1c1c1;
+  border-radius: 4px;
+
+  position: absolute;
+  z-index: 2;
+}
+
+.progress-bar .bar:hover .used-bar{
+  background-color: #adff2f;
+  
+}
+
+.progress-bar .bar:hover .point-bar{
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+
+  position: absolute;
+  z-index: 3;
+  top: calc(50% - 4px);
+  left: calc(100% - 4px);
+}
+
+
 
 
