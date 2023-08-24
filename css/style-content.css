@@ -237,6 +237,21 @@ ul{
   font-size: 14px;
 }
 
+.category-menu a:active::after{
+  content: "";
+  background-color: #adff2f;
+
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,0);
+  
+  /* oppure */
+  /* left: calc(50% - 16px); */
+}
+
 /* Category song*/
 .category{
   padding-top: 32px;
@@ -316,7 +331,6 @@ ul{
 }
 
 .song{
-  text-align: left;
   margin-right: 40px;
 }
 
@@ -387,7 +401,7 @@ ul{
   font-size: 10px;
 }
 
-.progress-bar .bar{
+.bar{
   width: 80%;
   height: 4px;
   background-color: #5a5a5a;
@@ -398,7 +412,7 @@ ul{
   cursor: pointer;
 }
 
-.progress-bar .used-bar{
+.used-bar{
   width: 20%;
   height: 4px;
   background-color: #c1c1c1;
@@ -408,12 +422,12 @@ ul{
   z-index: 2;
 }
 
-.progress-bar .bar:hover .used-bar{
+.bar:hover .used-bar{
   background-color: #adff2f;
   
 }
 
-.progress-bar .bar:hover .point-bar{
+.bar:hover .point-bar{
   width: 8px;
   height: 8px;
   background-color: white;
@@ -423,6 +437,26 @@ ul{
   z-index: 3;
   top: calc(50% - 4px);
   left: calc(100% - 4px);
+}
+
+/* Bottom right - volume */
+
+.bottom-right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bottom-right a{
+  padding: 0 4px;
+}
+
+.bottom-right .box-button-volume{
+  width: 50%;
+}
+
+.bottom-right .bar{
+  width: 40%;
 }
 
 
