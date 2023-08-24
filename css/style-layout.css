@@ -54,7 +54,9 @@ img{
 }
 
 .playlist{
+  min-height: 100px;
   height: calc(100% - 370px);
+  /* height: 40%; */
   overflow-y: auto;
 }
 
