@@ -132,6 +132,6 @@
   /* right */
   .bottom-right{
     font-size: 2vw;
-    min-width: 140px;
+    min-width: 100px;
   }
  }
