@@ -456,6 +456,7 @@ ul{
 }
 
 .bottom-right .bar{
+  margin: 0 8px;
   width: 40%;
 }
 
