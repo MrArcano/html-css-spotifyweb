@@ -99,3 +99,39 @@
     left: 40px;
   }
  }
+
+ @media screen and (max-width: 580px){
+  /* BOTTOM player */
+
+  /* left */
+  .song span{
+    font-size: 2.1vw;
+  }
+  .song a{
+    font-size: 1.8vw;
+  }
+
+  .pref a{
+    font-size: 2vw;
+  }
+
+  /* center */
+
+  .box-button a{
+    font-size: 2vw;
+  }
+
+  .box-button .fa-circle-play{
+    font-size: 3.5vw;
+    padding: 0 4px;
+  }
+
+  .progress-bar span{
+    font-size: 1.5vw;
+  }
+  /* right */
+  .bottom-right{
+    font-size: 2vw;
+    min-width: 140px;
+  }
+ }
