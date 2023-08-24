@@ -299,3 +299,56 @@ ul{
     BOTTOM player
 ************************************************/
 
+/* Bottom left - song title/info */
+.bottom-left{
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.bottom-left .image{
+  width: 40px;
+  height: 40px;
+  margin-right:16px;
+  
+  display: flex;
+  align-items: center;
+}
+
+.song{
+  text-align: left;
+  margin-right: 40px;
+}
+
+
+.song span{
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+
+.song a{
+  display: block;
+  line-height: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #a3a3a3;
+}
+
+.song a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+.pref{
+  color: #a3a3a3;
+}
+
+.pref a{
+  margin-right: 8px;
+}
+/* Bottom center - player button */
+
+
