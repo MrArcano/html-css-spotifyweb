@@ -119,6 +119,16 @@ img{
   display: none;
 }
 
+.top-category label::before{
+  content: "Mostra tutto...";
+  display: inline-block;
+}
+
+.top-category label::after{
+  content: "Nascondi";
+  display: none;
+}
+
 .check-view{
   position: absolute;
   /* --------------- */
@@ -126,12 +136,19 @@ img{
   top: 0;
   left: 0;
   /* --------------- */
-
   opacity: 0;
 }
 
-.check-view:checked + .row{
+.check-view:checked ~ .row{
   flex-wrap: wrap;
+}
+
+.check-view:checked + .top-category label::after{
+  display: inline-block;
+}
+
+.check-view:checked + .top-category label::before{
+  display: none;
 }
 
 
