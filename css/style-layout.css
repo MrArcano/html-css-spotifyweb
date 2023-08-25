@@ -106,22 +106,25 @@ img{
   height: calc(100% - 80px);
 }
 
-.category{
-  max-height: 52%;
-  overflow: hidden;
-  border: 4px solid white;
+.top-category{
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-category span{
+  display: none;
 }
 
 .category .row{
   display: flex;
-  flex-wrap: wrap;
-  border: 4px solid green;
-  /* height: calc(100vw - 230px / 16); */
+  overflow: hidden;
+  /* flex-wrap: wrap; */
+  /* non facendo wrappare, le colonne all'interno cercheranno di stare tutte vicine, ma riducono la loro grandezza, quindi devo usare sulle colonne  flex-shrink: 0; */
 }
 
 .category .row .col{
+  flex-shrink: 0;
   width: calc(100% / 6);
-  border: 4px solid red;
 }
 /* --------------------------------------------- */
 
