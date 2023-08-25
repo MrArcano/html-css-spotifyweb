@@ -176,6 +176,8 @@ img{
   justify-content: space-between;
 
   background-color: #282828;
+  position: fixed;
+  z-index: 999;
 }
 
 .bottom-left{
