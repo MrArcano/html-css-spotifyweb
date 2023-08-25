@@ -112,17 +112,17 @@
   }
 
   .pref a{
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 
   /* center */
 
   .box-button a{
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .box-button .fa-circle-play{
-    font-size: 3.5vw;
+    font-size: 6vw;
     padding: 0 4px;
   }
 
@@ -131,7 +131,7 @@
   }
   /* right */
   .bottom-right{
-    font-size: 2vw;
+    font-size: 2.5vw;
     min-width: 100px;
   }
  }
