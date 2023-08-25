@@ -3,7 +3,7 @@
  ************************************************/
 /* DESKTOP */
  @media screen and (max-width: 1100px){
-  .top-category span{
+  .top-category label{
     display: inline-block;
   }
 

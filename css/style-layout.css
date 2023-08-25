@@ -109,15 +109,36 @@ img{
 .top-category{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+/* box check box mostra tutto... */
 
-.top-category span{
+
+.top-category label{
+  cursor: pointer;
   display: none;
 }
+
+.check-view{
+  position: absolute;
+  /* --------------- */
+  /* non servirebbe */
+  top: 0;
+  left: 0;
+  /* --------------- */
+
+  opacity: 0;
+}
+
+.check-view:checked + .row{
+  flex-wrap: wrap;
+}
+
 
 .category .row{
   display: flex;
   overflow: hidden;
+
   /* flex-wrap: wrap; */
   /* non facendo wrappare, le colonne all'interno cercheranno di stare tutte vicine, ma riducono la loro grandezza, quindi devo usare sulle colonne  flex-shrink: 0; */
 }
