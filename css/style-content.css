@@ -204,10 +204,30 @@ ul{
   padding: 8px 24px;
   border-radius: 24px;
   margin-right: 32px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.opaque-fixed .btn::before{
+  content: "";
+  height: 40px;
+  width: 0;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(172, 255, 47, 0.2);
+  transition: width 0.6s;
 }
 
 .opaque-fixed .btn:hover{
   scale: 1.05;
+}
+
+.opaque-fixed .btn:hover::before{
+  width: 240px;
 }
 
 /* Category menu */
@@ -293,7 +313,7 @@ ul{
 }
 
 .shadow-hover{
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -304,10 +324,13 @@ ul{
   position: absolute;
   top: 0;
   bottom: 0;
+
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
 .category .hover-play:hover .shadow-hover{
-  display: flex;
+  opacity: 1;
 }
 
 /************************************************
